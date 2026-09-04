@@ -16,8 +16,8 @@ setup(
     maintainer='Jose Eduardo Sanchez',
     maintainer_email='eduardo.mtz1403@gmail.com',
     description='Closed-loop speed controller for a real DC motor with encoder '
-                 'feedback via micro-ROS: reference signal generator and data '
-                 'logger nodes for the TE3001B Final Challenge.',
+    'feedback via micro-ROS: reference signal generator and data '
+    'logger nodes for the TE3001B Final Challenge.',
     license='Apache-2.0',
     extras_require={
         'test': [

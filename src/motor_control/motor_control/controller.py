@@ -3,7 +3,6 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
 from rcl_interfaces.msg import SetParametersResult
-import numpy as np
 
 
 class PIDController(Node):
@@ -37,8 +36,8 @@ class PIDController(Node):
 
         # Timer
         self.timer = self.create_timer(self.Ts, self.control_loop)
-        
-        #Parameter Callback
+
+        # Parameter Callback
         self.add_on_set_parameters_callback(self.parameters_callback)
 
     def sp_callback(self, msg):
@@ -72,7 +71,7 @@ class PIDController(Node):
                     self.get_logger().warn("Kp cannot be negative.")
                     return SetParametersResult(successful=False, reason="Kp must be >= 0")
                 else:
-                    self.kp = param.value # Update internal variable
+                    self.kp = param.value  # Update internal variable
                     self.get_logger().info(f"Kp updated to {self.kp}")
 
             if param.name == "ki":
@@ -80,7 +79,7 @@ class PIDController(Node):
                     self.get_logger().warn("Ki cannot be negative.")
                     return SetParametersResult(successful=False, reason="Ki must be >= 0")
                 else:
-                    self.ki = param.value # Update internal variable
+                    self.ki = param.value  # Update internal variable
                     self.get_logger().info(f"Ki updated to {self.ki}")
 
             if param.name == "kd":
@@ -88,15 +87,15 @@ class PIDController(Node):
                     self.get_logger().warn("Kd cannot be negative.")
                     return SetParametersResult(successful=False, reason="Kd must be >= 0")
                 else:
-                    self.kd = param.value # Update internal variable
+                    self.kd = param.value  # Update internal variable
                     self.get_logger().info(f"Kd updated to {self.kd}")
-                
+
             if param.name == "Ts":
                 if param.value < 0.0:
                     self.get_logger().warn("Ts cannot be negative.")
                     return SetParametersResult(successful=False, reason="Ts must be >= 0")
                 else:
-                    self.Ts = param.value # Update internal variable
+                    self.Ts = param.value  # Update internal variable
                     self.get_logger().info(f"Ts updated to {self.Ts}")
 
         return SetParametersResult(successful=True)

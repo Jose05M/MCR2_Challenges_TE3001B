@@ -16,8 +16,8 @@ setup(
     maintainer='Jose Eduardo Sanchez',
     maintainer_email='eduardo.mtz1403@gmail.com',
     description='ROS 2 publisher that sends random PWM commands to control a real '
-                 'DC motor driven by an ESP32 running micro-ROS — Week 3 '
-                 'mini-challenge of TE3001B.',
+    'DC motor driven by an ESP32 running micro-ROS — Week 3 '
+    'mini-challenge of TE3001B.',
     license='Apache-2.0',
     extras_require={
         'test': [
