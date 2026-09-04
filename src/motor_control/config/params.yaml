@@ -1,0 +1,55 @@
+/group1/motor_sys_1:
+  ros__parameters:
+    sys_gain_K: 4.0
+    sys_tau_T: 0.9
+    sample_time: 0.01
+    initial_conditions: 0.0
+    
+/group1/control_1:
+  ros__parameters:
+    kp: 0.1
+    ki: 7.0
+    kd: 0.0
+    Ts: 0.01
+    
+/group1/sp_gen_1:
+  ros__parameters:
+    signal_type : "sine"
+    
+    
+/group2/motor_sys_2:
+  ros__parameters:
+    sys_gain_K: 1.75
+    sys_tau_T: 0.5
+    sample_time: 0.01
+    initial_conditions: 0.0
+    
+/group2/control_2:
+  ros__parameters:
+    kp: 0.1
+    ki: 7.0
+    kd: 0.0
+    Ts: 0.01
+    
+/group2/sp_gen_2:
+  ros__parameters:
+    signal_type : "square"
+    
+    
+/group3/motor_sys_3:
+  ros__parameters:
+    sys_gain_K: 2.16
+    sys_tau_T: 0.05
+    sample_time: 0.01
+    initial_conditions: 0.0
+    
+/group3/control_3:
+  ros__parameters:
+    kp: 0.1
+    ki: 7.0
+    kd: 0.0
+    Ts: 0.01
+    
+/group3/sp_gen_3:
+  ros__parameters:
+    signal_type : "triangle"
