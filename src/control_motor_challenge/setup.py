@@ -13,10 +13,12 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ed',
-    maintainer_email='ed@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Jose Eduardo Sanchez',
+    maintainer_email='eduardo.mtz1403@gmail.com',
+    description='Closed-loop speed controller for a real DC motor with encoder '
+                 'feedback via micro-ROS: reference signal generator and data '
+                 'logger nodes for the TE3001B Final Challenge.',
+    license='Apache-2.0',
     extras_require={
         'test': [
             'pytest',

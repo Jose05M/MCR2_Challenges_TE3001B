@@ -194,11 +194,6 @@ the [reference repository](https://github.com/Jose05M/challenge_control_PID_usin
 | Step                | Fast, accurate settling from -1.0 to +1.0 within a few seconds                 |
 | Step + perturbations| Manual resistance applied to the shaft (t=5-20s) causes oscillation, but the controller recovers the setpoint |
 
-&ensp;&ensp;Per the report's conclusions: the system is stable in every scenario;
-the main identified improvements are adding an **anti-windup** mechanism to the
-integral term, and filtering/using a time-between-pulses method for velocity
-estimation at low RPM.
-
 | Member                         | ID         |
 |---------------------------------|------------|
 | Josue Ureña Valencia            | A01738940  |

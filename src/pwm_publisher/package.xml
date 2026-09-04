@@ -3,9 +3,9 @@
 <package format="3">
   <name>pwm_publisher</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="ed@todo.todo">ed</maintainer>
-  <license>TODO: License declaration</license>
+  <description>ROS 2 publisher that sends random PWM commands to control a real DC motor driven by an ESP32 running micro-ROS — Week 3 mini-challenge of TE3001B.</description>
+  <maintainer email="eduardo.mtz1403@gmail.com">Jose Eduardo Sanchez</maintainer>
+  <license>Apache-2.0</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
